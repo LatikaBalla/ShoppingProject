@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "runtest":"npx cypress run",
     "cy:open-dashboard": "cypress open",
     "cy:open": "cypress open --reporter mochawesome",
     "cy:run-all": "cypress run --spec cypress/integration/e2e/*.spec.js",
@@ -16,11 +17,12 @@
     "e2e",
     "automation",
     "framework",
-    "cypress"],
+    "cypress"
+  ],
   "author": "Chaitanya Vaddisriram",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.2.0"
+    "cypress": "^9.7.0"
   },
   "devDependencies": {
     "cypress-mochawesome-reporter": "^2.3.0",
