@@ -22,7 +22,7 @@ pipeline {
         
         stage('Testing') {
             steps {
-                sh "npm i"
+                sh "npm init"
                 sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
