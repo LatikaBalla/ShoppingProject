@@ -21,14 +21,9 @@ pipeline {
         }
         
         stage('Testing') {
-            steps {
-                try {
-                        sh "npm init"
+            steps {  
+                        sh "npm i"
                         sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
-                    } catch (e) {
-                        echo "An error occurred: ${e}"
-                    }
-               
             }
         }
         
